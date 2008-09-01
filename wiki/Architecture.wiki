@@ -1,0 +1,27 @@
+= Introduction =
+
+The purpose of this document is to explicate the detailed technical architecture of the Zing, which is a Social Networking Site (!SNS) !vis-!à-!vis Java Shindig !OpenSocial Reference implementation.
+
+
+= Details =
+
+Architecture Diagram
+
+
+
+
+
+
+
+
+Fig 1.1 Spice and Shindig Rest Server integration
+
+=Esprit with Shindig=
+
+To use Shindig as an opensocial container, Esprit need to pass security token as a request parameter. For now, we have used the token generation model of Shindig, which can be modified further depending upon any SNS requirement.
+ Following files have been use from Shindig to form the security token:
+•	Crypto.php
+•	BlobCrypter.php
+•	SecurityToken.php
+•	BasicBlobCrypter.php
+•	BasicSecurityToken.php
