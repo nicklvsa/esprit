@@ -114,3 +114,12 @@ function validate(obj)
 	if(obj.innerHTML="Enter your message here.")
         obj.innerHTML = "";
 }
+
+function hidestatus(){
+window.status=''
+return true
+}
+if (document.layers)
+document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT)
+document.onmouseover=hidestatus
+document.onmouseout=hidestatus
