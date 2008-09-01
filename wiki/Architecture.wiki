@@ -3,7 +3,7 @@
 The purpose of this document is to explicate the detailed technical architecture of the Esprit, which is a Social Networking Site (!SNS) !vis-!à-!vis Java Shindig !OpenSocial Reference implementation.
 
 
-= Details =
+== Details ==
 
 Architecture Diagram
 
@@ -16,7 +16,7 @@ Architecture Diagram
 
 Fig 1.1 Spice and Shindig Rest Server integration
 
-=Esprit with Shindig=
+== Esprit with Shindig ==
 
 To use Shindig as an opensocial container, Esprit need to pass security token as a request parameter. For now, we have used the token generation model of Shindig, which can be modified further depending upon any SNS requirement.
 Following files have been use from Shindig to form the security token:
@@ -28,7 +28,7 @@ Following files have been use from Shindig to form the security token:
 
 Shindig container in SPICE can be implemented by using the shindig server components, * OpenSocial Restful component*
 
-==OpenSocial Restful Component==
+== OpenSocial Restful Component ==
 
  Esprit OpenSocial Restful component includes the following classes:
 
