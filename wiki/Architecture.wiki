@@ -37,6 +37,6 @@ Shindig container in SPICE can be implemented by using the shindig server compon
  # SpiceActivitiesService- SpiceActivitiesService class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s activities. SpiceActivitiesService implements the Shindig’s ActivitiesService class which specifies the all the possible methods and their prototypes which a container must follow.
 
 
- # SpiceDataService- SpiceDataServiceKMHH class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s application related data. SpiceDataService implements the Shindig’s DataService class which specifies the all the possible methods and their prototypes which a container must follow.
+ # SpiceDataService- SpiceDataSer class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s application related data. SpiceDataService implements the Shindig’s DataService class which specifies the all the possible methods and their prototypes which a container must follow.
 
  # SpiceDBFetcher- SpiceDBFetcher is simply a Data Access Layer talking to SPICE database. All the services (SpicePeopleService, SpiceDataService and SpiceActivitiesService) use this data access layer for creating, fetching, updating and deleting information into SPICE database which are coming from OpenSocial gadgets.
