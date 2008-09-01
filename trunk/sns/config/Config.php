@@ -1,7 +1,7 @@
 <?php
 
 
-$gadget_server = 'http://220.225.96.25/esprit/shindig/php';
+$gadget_server = 'http://shindig/';
 $hostname_esprit_conn = "localhost";
 $database_esprit_conn = "espritsns";
 $username_esprit_conn = "root";
