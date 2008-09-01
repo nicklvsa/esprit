@@ -7,11 +7,11 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
 
 = Details =
 
- #Get the esprit source code from the following location:
+ # Get the esprit source code from the following location:
  
- #Configuring Database:
-   *Create a new MySql db and run the scripts kept in the file: esprit/SQL/esprit.sql.
-   *Open the file esprit\src\config.php, and enter your db configurations.
+ # Configuring Database:
+   * Create a new MySql db and run the scripts kept in the file: esprit/SQL/esprit.sql.
+   * Open the file esprit\src\config.php, and enter your db configurations.
 
- #Configuring Shindig:
-   *Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
+ # Configuring Shindig:
+   * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
