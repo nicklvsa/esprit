@@ -6,10 +6,10 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
 == Details ==
 
  # Get the esprit source code from the following location: http://esprit.googlecode.com/svn/trunk/ esprit-read-only
- # *Configuring Database:*
+ # *Configure Database:*
    * Create a new MySql db and run the scripts kept in the file: esprit/SQL/esprit.sql.
    * Open the file esprit\src\config.php, and enter your db configurations.
- # *Configuring Shindig:*
+ # *Configure Shindig:*
    * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
    * Once shindig is up and running, open the file esprit\src\config.php, and copy the shindig url into gadget server url. 
    * Copy the following four esprit files into the shindig’s code at shindig/trunk/php/src/socialrest/samplecontainer.
@@ -23,4 +23,4 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
       * 'app_data_service' => 'espritAppDataService'
 
 Now the code is ready to be deployed on any web server.
-Note: This application is tried and tested on the Apache Shindig version 
+Note: This application is tried and tested on the Apache Shindig version as on Aug 24th'08.
