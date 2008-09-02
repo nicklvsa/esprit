@@ -23,4 +23,11 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
       * 'app_data_service' => 'espritAppDataService'
 
 Now the code is ready to be deployed on any web server.
-Note: This application is tried and tested on the Apache Shindig version as on Aug 24th'08.
+
+
+== Additional Notes ==
+ * This application is tried and tested on the Apache Shindig version as on Aug 24th'08.
+ * There are scipts for creating test users in the sns, which gives you a feel of the application. After running the scripts login into Esprit with following credentials:
+    * Username: test1; password: test1
+    * Username:test2; password: test2
+ * User can also signup with Esprit to create new user.
