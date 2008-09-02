@@ -2,6 +2,12 @@
 
 This guide provides step by step configuration of Esprit, which is a PHP based SNS conforming to opensocial specification.
 
+== Prerequisites ==
+ * SVN Client to download the code
+ * PHP 5.X
+ * Apache Webserver
+ * MySQL 5.0
+ * Apache Shindig  
 
 == Details ==
 
