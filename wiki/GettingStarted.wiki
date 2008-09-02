@@ -15,11 +15,10 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
    * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
    * Once shindig is up and running, open the file esprit\src\config.php, and copy the shindig url into gadget server url. 
    * Copy the following four esprit files into the shindig’s code at shindig/trunk/php/src/socialrest/samplecontainer.
-      a.esprit/src/shindigFiles/espritPeopleService.php
-      b.esprit /src/shindigFiles/espritActivitiesService.php
-      c.esprit /src/shindigFiles/espritAppDataService.php
-      d.esprit /src/shindigFiles/espritDBFetcher.php
-
+      * esprit/src/shindigFiles/espritPeopleService.php
+      * esprit /src/shindigFiles/espritActivitiesService.php
+      * esprit /src/shindigFiles/espritAppDataService.php
+      * esprit /src/shindigFiles/espritDBFetcher.php
     * Open  the shindig’s shindig/php/config/container.php and change the following paths :
       a.'people_service' => 'espritPeopleService'
       b.'activity_service' =>'espritActivitiesService'
