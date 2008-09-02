@@ -20,9 +20,9 @@ This guide provides step by step configuration of Esprit, which is a PHP based S
       * esprit /src/shindigFiles/espritAppDataService.php
       * esprit /src/shindigFiles/espritDBFetcher.php
     * Open  the shindig’s shindig/php/config/container.php and change the following paths :
-      a.'people_service' => 'espritPeopleService'
-      b.'activity_service' =>'espritActivitiesService'
-      c.'app_data_service' => 'espritAppDataService'
+      * 'people_service' => 'espritPeopleService'
+      * 'activity_service' =>'espritActivitiesService'
+      * 'app_data_service' => 'espritAppDataService'
 
 Now the code is ready to be deployed on any web server.
 Note: This application is tried and tested on the Apache Shindig version 
