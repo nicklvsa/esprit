@@ -1,11 +1,11 @@
-= Introduction =
+== Introduction ==
 
 This guide provides step by step configuration of Esprit, which is a PHP based SNS conforming to opensocial specification.
 
 
-= Details =
+== Details ==
 
- # Get the esprit source code from the following location: 
+ # Get the esprit source code from the following location: http://esprit.googlecode.com/svn/trunk/ esprit-read-only
  # *Configuring Database:*
    * Create a new MySql db and run the scripts kept in the file: esprit/SQL/esprit.sql.
    * Open the file esprit\src\config.php, and enter your db configurations.
