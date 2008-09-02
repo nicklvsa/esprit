@@ -12,7 +12,7 @@ The purpose of this document is to explicate the detailed technical architecture
 
 
 
-[http://esprit.googlecode.com/svn/trunk/html/images/Esprit_Shindig_Rest_Server_Integration.gif]
+[http://esprit.googlecode.com/svn/trunk/html/images/Esprit_Shindig_Rest_Server_Integration.GIF]
 
 Fig 1.1 Spice and Shindig Rest Server integration
 
