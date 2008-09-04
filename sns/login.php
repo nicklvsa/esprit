@@ -83,7 +83,7 @@ if (isset($_POST['user_name'])) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login to eSprit</title>
+<title>Login to Esprit</title>
 <link href="../html/CSS/style.css" rel="stylesheet" type="text/css" />
 
 
@@ -164,7 +164,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
       <tr>
         <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td colspan="2"><div align="center"><a href="register.php">Join eSprit!!</a></div></td>
+            <td colspan="2"><div align="center"><a href="register.php">Join Esprit!!</a></div></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
