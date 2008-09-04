@@ -11,8 +11,7 @@ This guide provides step by step configuration of esprit, which is a PHP based S
 
 == Details ==
 
- # svn checkout the esprit source code from the following location: 
-     http://esprit.googlecode.com/svn/trunk/ esprit-read-only
+ # svn checkout the esprit source code from the following location: http://esprit.googlecode.com/svn/trunk/ esprit-read-only
 
  # *Configure Database:*
    * Create a new !MySql database and run the scripts kept in the file: esprit/SQL/espritsns.sql.
