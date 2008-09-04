@@ -132,7 +132,7 @@ if(!empty($to))
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= 'From:'.$from . "\r\n";
 
-	$mail_contents = $_POST['contents']."<br><br>This message has been sent by impetus eSprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
+	$mail_contents = $_POST['contents']."<br><br>This message has been sent by impetus Esprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
 
 	echo "<div align='center' ><center>";
 

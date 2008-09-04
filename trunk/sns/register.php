@@ -1,5 +1,7 @@
 <?
 ob_start();
+require_once('Config/config.php'); 
+mysql_select_db($database_esprit_conn, $esprit_conn);
 
 $fake = false;
 
@@ -22,8 +24,32 @@ if (isset($_POST['submit']))
   if ($_SESSION['chkcode'] == $chk_code)
   {
     if ($error == "")
-      header("location:registeruser.php?user_name=$user_name&user_password=$user_password&user_email=$user_email&firstname=$firstname&lastname=$lastname");
-    else
+	{
+		$sql = "select * from user_main where user_email='".$user_email."'";
+	    $result = mysql_query($sql, $esprit_conn) or die(mysql_error());
+		$temp = mysql_fetch_row($result);
+		if(!$temp)
+		{	
+		    $sql = "select * from user_main where user_name='".$user_name."'";
+    	    $result = mysql_query($sql, $esprit_conn) or die(mysql_error());
+			$temp = mysql_fetch_row($result);
+			if(!$temp)
+		    {	header("location:registeruser.php?user_name=$user_name&user_password=$user_password&user_email=$user_email&firstname=$firstname&lastname=$lastname");
+			}
+			else
+			{
+				$error = "User Name Already Exists!!!";
+			}
+		}
+		else
+		{
+			if($error=="") 
+			{
+				$error = "Email Address Already Exists!!!";
+			}
+		}
+    }
+	else
       $fake = true;
   }
   else
@@ -35,7 +61,7 @@ if (isset($_POST['submit']))
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Register To eSprit</title>
+	<title>Register To Esprit</title>
 	<link href="../html/CSS/style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../html/js/validateRegistrationForm.js"></script>
 </head>
@@ -51,7 +77,7 @@ if (isset($_POST['submit']))
     <tr>
       <td height="67" colspan="3"><div align="center">
         <p class="SIGNIN style2">Register
-          eSprit</p>
+          Esprit</p>
         </div></td>
       <td>&nbsp;</td>
     </tr>
@@ -69,7 +95,7 @@ if (isset($_POST['submit']))
       <td width="159" class="logintext" align="right">First Name :</td>
       <td colspan="2" align="left">
         &nbsp;<input name="firstname" type="text" class="regbox" id="firstname"  accesskey="fn" tabindex="1" value="<? echo
-$user_name; ?>" size="30" maxlength="25">
+$firstname; ?>" size="30" maxlength="25">
         </td>
     </tr>
 	 <tr>
@@ -80,7 +106,7 @@ $user_name; ?>" size="30" maxlength="25">
       <td width="159" class="logintext" align="right">Last Name :</td>
       <td colspan="2" align="left">
         &nbsp;<input name="lastname" type="text" class="regbox" id="lastname"  accesskey="ln" tabindex="2" value="<? echo
-$user_name; ?>" size="30" maxlength="25">
+$lastname; ?>" size="30" maxlength="25">
         </td>
     </tr>
 	 <tr>
@@ -165,7 +191,7 @@ $user_email; ?>" size="30" maxlength="25">
     </tr>
     <tr>
       <td></td><td></td><td>
-          <input  type="submit" name="submit" class="style1" id="button" accesskey="r" tabindex="6"  value="Register">
+          <input  type="submit" name="submit" class="style1" id="button" accesskey="r" tabindex="6"  value="Register">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  type="button" name="back" class="style1" id="button" accesskey="r" tabindex="6" onclick="window.location.href='login.php';" value="Back">
       </td>
       <td>&nbsp;</td>
     </tr>
