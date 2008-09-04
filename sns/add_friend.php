@@ -146,6 +146,18 @@ $view_id = $_GET['userID'];
 										}
 										else
 										{
+											$sql_viewer = "SELECT user_email FROM user_main WHERE user_id = ".$_POST['userID'];
+											$result2 = mysql_query($sql_viewer);
+											$viewer = mysql_fetch_assoc($result2);
+											$mail_subject = $user_info_name." has sent you a friend request!!!";
+											$to = $viewer['user_email'];
+											$headers  = 'MIME-Version: 1.0' . "\r\n";
+											$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+											$headers .= 'From: noreply@esprit.com\r\n';
+
+											$mail_contents = "<br><br>This message has been sent by impetus Esprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
+
+											@mail($to,$mail_subject,$mail_contents,$headers);
 											echo "A request to add $user_info_name as a friend is sent<br> Please wait till request is accepted";
 										}
 								
