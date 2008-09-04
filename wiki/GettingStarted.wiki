@@ -10,7 +10,7 @@ This guide provides step by step configuration of esprit, which is a PHP based S
  * Apache Shindig  
 
 == Details ==
-
+**
  # svn checkout the esprit source code from the following location: 
    * http://esprit.googlecode.com/svn/trunk/ esprit-read-only
  # *Configure Database:*
