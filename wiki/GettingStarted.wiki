@@ -12,10 +12,12 @@ This guide provides step by step configuration of esprit, which is a PHP based S
 == Details ==
 
  # svn checkout the esprit source code from the following location: http://esprit.googlecode.com/svn/trunk/ esprit-read-only
+
  # *Configure Database:*
    * Create a new !MySql database and run the scripts kept in the file: esprit/SQL/espritsns.sql.
    * Open the file esprit\sns\config.php, and enter your database configurations.
    * Open the file esprit\shindigFiles\espritDBFetcher.php, and enter your database configurations same as above.
+
  # *Configure Shindig:*
    * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
    * Once shindig is up and running, open the file esprit\sns\config.php, and copy the shindig url into gadget server url. 
