@@ -36,6 +36,23 @@ if(isset($_POST['post_scrap']))
 	$sql_insertScrap = sprintf("INSERT INTO user_scrap values(%s,%s,%s,'%s')",$noOfScraps,$_SESSION['user_id'],$view_id,$contents);
 	//echo $sql_insertScrap;
 	$result = mysql_query($sql_insertScrap) or die("Error inserting record(s) into the database: " . mysql_error());
+
+	$sql_sender = "SELECT user_name FROM user_main WHERE user_id = ".$_SESSION['user_id'];
+    $sql_viewer = "SELECT user_email FROM user_main WHERE user_id = ".$view_id;
+	$result1 = mysql_query($sql_sender);
+    $result2 = mysql_query($sql_viewer);
+	$sender = mysql_fetch_assoc($result1);
+    $viewer = mysql_fetch_assoc($result2);
+
+	$mail_subject = $sender['user_name']." has written you a scrapbook entry !!!";
+    $to = $viewer['user_email'];
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers .= 'From: noreply@esprit.com\r\n';
+
+	$mail_contents = "<br><br>This message has been sent by impetus Esprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
+
+	@mail($to,$mail_subject,$mail_contents,$headers);
 }
 
 ?>
