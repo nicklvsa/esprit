@@ -33,9 +33,9 @@
 
 	 $thumbnail_url = "../html/images/default1.jpg";
 	 $profile_url = sprintf("profile.php?userID=%d",$id[0]);
-	$query_insert_user_profile = "INSERT INTO `user_profile` ( `user_id` , `first_name` , `last_name` , `user_image`,`profile_url` )
+	$query_insert_user_profile = "INSERT INTO `user_profile` ( `user_id` , `first_name` , `last_name`,`Gender` , `user_image`,`profile_url` )
 	VALUES (
-	'$id[0]', '$firstname', '$lastname','$thumbnail_url','$profile_url'
+	'$id[0]', '$firstname', '$lastname','m','$thumbnail_url','$profile_url'
 	);";
 	mysql_query($query_insert_user_profile, $esprit_conn) or die(mysql_error());
 	//initializing user_online
