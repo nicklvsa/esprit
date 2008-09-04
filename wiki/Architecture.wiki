@@ -1,7 +1,6 @@
 == Introduction ==
 
-The purpose of this document is to explicate the detailed technical architecture of the e
-esprit, which is a Social Networking Site (!SNS) !vis-!à-!vis Java Shindig !OpenSocial Reference implementation.
+The purpose of this document is to explicate the detailed technical architecture of the Esprit, which is a Social Networking Site (!SNS) !vis-!à-!vis Java Shindig !OpenSocial Reference implementation.
 
 
 == Details ==
@@ -33,7 +32,7 @@ Shindig container in SPICE can be implemented by using the shindig server compon
 
  esprit !OpenSocial Restful component includes the following classes:
 
- # !SpicePeopleService- !SpicePeopleService class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s personal information. !SpicePeopleService implement the Shindig’s !PeopleService class which specifies all the possible methods and their prototypes which a container must follow.
- # !SpiceActivitiesService- !SpiceActivitiesService class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s activities. !SpiceActivitiesService implements the Shindig’s !ActivitiesService class which specifies the all the possible methods and their prototypes which a container must follow.
- # !SpiceDataService- !SpiceData class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s application related data. !SpiceDataService implements the Shindig’s !DataService class which specifies the all the possible methods and their prototypes which a container must follow.
- # SpiceDBFetcher- SpiceDBFetcher is simply a Data Access Layer talking to SPICE database. All the services (!SpicePeopleService, !SpiceDataService and !SpiceActivitiesService) use this data access layer for creating, fetching, updating and deleting information into SPICE database which are coming from !OpenSocial gadgets.
+ # !espritPeopleService- !espritPeopleService class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s personal information. !espritPeopleService implement the Shindig’s !PeopleService class which specifies all the possible methods and their prototypes which a container must follow.
+ # !espritActivitiesService- !espritActivitiesService class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s activities. !espritActivitiesService implements the Shindig’s !ActivitiesService class which specifies the all the possible methods and their prototypes which a container must follow.
+ # !espritDataService- !espritData class implements all the methods to handle each kind of request (requesting, updating…) related to person/user’s application related data. !espritDataService implements the Shindig’s !DataService class which specifies the all the possible methods and their prototypes which a container must follow.
+ # espritDBFetcher- espritDBFetcher is simply a Data Access Layer talking to SPICE database. All the services (!espritPeopleService, !espritDataService and !espritActivitiesService) use this data access layer for creating, fetching, updating and deleting information into SPICE database which are coming from !OpenSocial gadgets.
