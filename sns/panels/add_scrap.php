@@ -49,8 +49,14 @@ if(isset($_POST['post_scrap']))
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= 'From: noreply@esprit.com\r\n';
-
-	$mail_contents = "<br><br>This message has been sent by impetus Esprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
+    $str = "To view scrapbook entry, Login to Esprite<br>";
+	$url = explode("/",$_SERVER[REQUEST_URI]);
+	unset($url[count($url)-1]);
+	$url = implode("/",$url);
+	$link = "http://".$_SERVER[HTTP_HOST].$url."/login.php";
+	$str.= "<a href='".$link."'>$link</a>";
+	$mail_contents = $str."<br><br><br><br>This message has been sent by impetus Esprit Platform<br>Copyright <b>(c)</b> 2008 Impetus Infotech (India) Pvt Ltd Inc (www.impetus.com). All Rights Reserved.";
+	
 
 	@mail($to,$mail_subject,$mail_contents,$headers);
 }
