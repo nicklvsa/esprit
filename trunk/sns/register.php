@@ -136,7 +136,7 @@ $user_name; ?>" size="30" maxlength="25">
       <td>&nbsp;</td>
       <td class="logintext" align="right">Email id :</td>
       <td colspan="2" align="left">&nbsp;<input name="user_email" type="text" class="regbox" id="user_email" accesskey="e" tabindex="5" value="<? echo
-$user_email; ?>" size="30" maxlength="25">
+$user_email; ?>" size="30" maxlength="128">
         </td>
     </tr>
 	<tr>
