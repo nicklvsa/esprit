@@ -14,6 +14,19 @@ else
     <td valign="middle"><div align="center"><a href = 'profile.php?userID=<?= $view_id ?>'><img src="<? echo $show_photo; ?>" /></a>
     </div></td>
   </tr>
+  </table>
+  <table border=0>
+  <tr>
+  <td> <?php 
+    $result = mysql_query("select first_name,last_name,Gender,city from user_profile where user_id=$view_id");
+    $row = mysql_fetch_assoc($result);
+    echo $row['first_name']." ".$row['last_name']; 
+  ?>
+  </td>
+  </tr>
+  <tr>
+  <td><?php if($row['Gender']=="m"){echo "Male";} else {echo "Female";}?></td></tr><tr><td><?php echo $row['city']?></td>
+  </tr>
 </table>
 
 <?
