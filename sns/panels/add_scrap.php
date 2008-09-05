@@ -48,7 +48,7 @@ if(isset($_POST['post_scrap']))
     $to = $viewer['user_email'];
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	$headers .= 'From: noreply@esprit.com\r\n';
+	$headers .= "From: noreply@esprit.com\r\n";
     $str = "To view scrapbook entry, Login to Esprite<br>";
 	$url = explode("/",$_SERVER[REQUEST_URI]);
 	unset($url[count($url)-1]);
