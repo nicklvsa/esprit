@@ -1,4 +1,5 @@
 
+<script language='javascript' src="../html/js/scripts.js"></script>
 <?php
 include_once("GetSQLValueString.php");
 
@@ -73,10 +74,23 @@ $queryString_rs_Scrap = sprintf("&totalRows_rs_Scrap=%d%s", $totalRows_rs_Scrap,
 			//in second condition user can delete scraps send by him.
 			if($view_id == $_SESSION['user_id'] || $_SESSION['user_id'] == $senderId)
 			{
-				echo "<a href = 'deleteScrap.php?scrap_id=$scrapid&sender_id=$receiverId&userID=$view_id'>delete</a></td>";
+			echo "<a href = 'deleteScrap.php?scrap_id=$scrapid&sender_id=$receiverId&userID=$view_id'>Delete</a><br>";
+			if($view_id == $_SESSION['user_id'])
+			{
+			echo "<a style='cursor:hand' onclick='javascript:post_Reply($scrapid);'>Reply</a>";
 			}
-			echo  "</td></tr></table></tr>";
-	  }	   
+			echo "</td></tr>";
+			if($view_id == $_SESSION['user_id'])
+			{
+			echo  "<tr><td id='$scrapid' colspan='3' align='center' style='display:none'  >";
+            
+			include("reply_scrap.php");;
+			echo "</td></tr>";
+			}
+
+			echo "</table></tr>";
+			}
+		}   
   
        }while($row_rs_Scrap = mysql_fetch_assoc($rs_Scrap));  ?>
 </table>
@@ -112,4 +126,3 @@ $queryString_rs_Scrap = sprintf("&totalRows_rs_Scrap=%d%s", $totalRows_rs_Scrap,
     <td>Records <?php echo ($startRow_rs_Scrap ) ?> to <?php echo min($startRow_rs_Scrap + $maxRows_rs_Scrap, $totalRows_rs_Scrap) ?> of <?php echo $totalRows_rs_Scrap; mysql_free_result($rs_Scrap);?> </td>
   </tr>
 </table>
-
