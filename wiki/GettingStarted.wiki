@@ -5,15 +5,19 @@ This guide provides step by step configuration of esprit, which is a PHP based S
 == Prerequisites ==
  * A Subversion Client to download the code
  * PHP 5.X.X
- * Apache Webserver
+   * Latest PHP version can be downloaded from: http://www.php.net/downloads.php
+ * Apache Web server
+   * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi
  * MySQL 5.0
- * Apache Shindig  
-
+   * MySql can be downloaded from: http://www.mysql.com/downloads/index.html
+ * Apache Shindig (available on 20 Aug,2008)  
+   *Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ <shindig> -r {2008-08-20}
 == Details ==
 
  * *svn checkout the esprit source code from the following location:*
-   * http://esprit.googlecode.com/svn/trunk/ esprit-read-only
- * *Configure Database:*
+   * http://esprit.googlecode.com/svn/trunk/ <esprit-read-only>
+ * *Configure Esprit:*
+   * Copy your downloaded esprit code in to web server's root /www/esprit or /wwwroot/esprit
    * Create a new !MySql database and run the scripts kept in the file: esprit/SQL/espritsns.sql.
    * Open the file esprit\sns\config.php, and enter your database configurations.
    * Open the file esprit\shindigFiles\espritDBFetcher.php, and enter your database configurations same as above.
