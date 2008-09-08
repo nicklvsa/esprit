@@ -70,7 +70,7 @@ if(isset($_POST['add_pic']))
 	}
 	else
 	{
-		$error="Invalid image";
+		$error="";
 	}
 
 	//create a xml file
@@ -92,7 +92,7 @@ if($view_id==$_SESSION['user_id'])
 
 <script language='javascript' src="../html/js/validations.js"></script>
 
-<form id="upload" name="upload" enctype="multipart/form-data" method="post" action="<? echo $_SERVER['PHP_SELF'];?>" onsubmit="return checkBlankPhoto();">
+<form id="upload" name="upload" enctype="multipart/form-data" method="post" action="<? echo $_SERVER['PHP_SELF'];?>" >
   <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
       <td valign="middle" bgcolor="#FFFFFF"><div align="center"></div></td>
@@ -111,7 +111,7 @@ if($view_id==$_SESSION['user_id'])
     <tr>
       <td valign="middle" bgcolor="#FFFFFF">
         <div align="center">
-          <input type="submit" name="add_pic" id="button" value="Upload" />
+          <input type="submit" name="add_pic" id="button" value="Upload" onclick='upLoad(fileField.value)' />
         </div></td>
     </tr>
     <tr>
