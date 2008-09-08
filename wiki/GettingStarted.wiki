@@ -23,7 +23,7 @@ This guide provides step by step configuration of esprit, which is a PHP based S
    * Open the file esprit/sns/config.php,esprit/shindigFiles/espritDBFetcher.php and enter your database configurations.
  * *Configure Shindig:*
    * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/.
-   * Once shindig is up and running, open the file esprit/sns/config.php, and copy the shindig url (like http://yourdomain:port/shindig/php) into $gadget_server. 
+   * Once shindig is up and running, open the file esprit/sns/config.php, and copy the shindig url (like http://yourdomain:port/shindig/php or if you are using virtualhost than http://shindig) into $gadget_server. 
    * Copy the following four esprit files into the shindig’s code at trunk/php/src/social-api/samplecontainer.
       * esprit/shindigFiles/espritPeopleService.php
       * esprit/shindigFiles/espritActivitiesService.php
