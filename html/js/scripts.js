@@ -119,6 +119,35 @@ function hidestatus(){
 window.status=''
 return true
 }
+
+
+function post_Reply(id)
+{
+	document.getElementById(id).style.display="";
+}
+function edit_caption(id,fl)
+{
+	if (fl==1)
+	{
+		document.getElementById(id).style.display='';
+	}
+	else
+		document.getElementById(id).style.display='none';
+
+}
+function upLoad(id)
+{
+	if (id=='')
+	{
+		alert('Ivalid Path');
+	}
+	
+else
+	document.upload.submit();
+
+}
+
+
 if (document.layers)
 document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT)
 document.onmouseover=hidestatus
