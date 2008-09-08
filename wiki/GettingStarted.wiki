@@ -7,7 +7,8 @@ This guide provides step by step configuration of esprit, which is a PHP based S
  * PHP 5.X.X
    * Latest PHP version can be downloaded from: http://www.php.net/downloads.php
  * Apache Web server
-   * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi
+   * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi   
+   * We have tested Esprit with Apache but it should work with any web server.
  * MySQL 5.0
    * MySql can be downloaded from: http://www.mysql.com/downloads/index.html
  * Apache Shindig (available on 20 Aug,2008)  
