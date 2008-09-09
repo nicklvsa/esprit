@@ -11,8 +11,8 @@ This guide provides step by step configuration of esprit, which is a PHP based S
    * We have tested Esprit with Apache but it should work with any web server.
  * MySQL 5.0
    * MySql can be downloaded from: http://www.mysql.com/downloads/index.html
- * Apache Shindig (available on 20 Aug,2008)  
-   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ <shindig> -r {2008-08-20}
+ * Apache Shindig 
+   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ <shindig> 
 == Details ==
 
  * *svn checkout the esprit source code from the following location:*
