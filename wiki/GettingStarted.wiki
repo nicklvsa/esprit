@@ -34,7 +34,7 @@ This guide provides step by step configuration of esprit, which is a PHP based S
       * 'activity_service' =>'espritActivitiesService'
       * 'app_data_service' => 'espritAppDataService'
 
-Now the code is ready to be moved to Apache server.Access it using the url: http://hostname:portnumber/esprit/sns/login.php
+Now the Esprit is ready to rock.Access it using the url: http://hostname:portnumber/esprit/sns/login.php
 
 
 == Additional Notes ==
