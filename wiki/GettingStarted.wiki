@@ -4,6 +4,8 @@ This guide provides step by step configuration of esprit, which is a PHP based S
  * A Subversion Client to download the code
  * PHP 5.X.X
    * Latest PHP version can be downloaded from: http://www.php.net/downloads.php
+   * Enable GD library for PHP installation. See http://in2.php.net/manual/en/image.setup.php for more details.
+   * Enable Short tag in php.ini file of the PHP installation 
  * Apache Web server
    * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi   
    * We have tested Esprit with Apache but it should work with any web server.
