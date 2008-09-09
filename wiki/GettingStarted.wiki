@@ -38,6 +38,7 @@ Now the code is ready to be moved to Apache server.Access it using the url: http
 
 
 == Additional Notes ==
+ * Esprit is best working and tested with Restfull implemetation of PHP Shindig.
  * This application is tried and tested on the Apache Shindig version as on Aug 20th'08.
  * There are scripts (testData.sql in esprit/sql) for creating test users in the sns.Logging in with these users gives you an overall look and feel of the application. After running the scripts, login into esprit with following credentials:
     * Username: test1; password: test1
