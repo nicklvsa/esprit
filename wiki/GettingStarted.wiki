@@ -12,7 +12,7 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
  * MySQL 5.0
    * !MySql can be downloaded from: http://www.mysql.com/downloads/index.html
  * Apache Shindig 
-   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ <shindig> 
+   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/
 == Details ==
 
  * *svn checkout the esprit source code from the following location:*
