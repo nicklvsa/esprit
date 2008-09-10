@@ -10,7 +10,7 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
  * Apache Web server
    * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi   
  * MySQL 5.0
-   * MySql can be downloaded from: http://www.mysql.com/downloads/index.html
+   * !MySql can be downloaded from: http://www.mysql.com/downloads/index.html
  * Apache Shindig 
    * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ <shindig> 
 == Details ==
