@@ -1,6 +1,6 @@
 == Introduction ==
 
-The purpose of this document is to explicate the detailed technical architecture of the Esprit, which is a Social Networking Site (SNS) vis-à-vis Java Shindig !OpenSocial Reference implementation.
+This write-up gives a detailed technical architecture of the Esprit, which is a Social Networking Site (SNS) vis-à-vis Java Shindig !OpenSocial Reference implementation.
 
 
 == Details ==
@@ -26,7 +26,7 @@ Following files have been use from Shindig to form the security token:
  # !BasicBlobCrypter.php
  # !BasicSecurityToken.php
 
-Shindig container in ESPRIT can be implemented by using the shindig server components, * !OpenSocial Restful component*
+Shindig container in ESPRIT can be implemented by using the shindig server components: !OpenSocial Restful component*
 
 == !OpenSocial Restful Component ==
 
