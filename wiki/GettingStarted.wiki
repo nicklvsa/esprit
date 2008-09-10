@@ -24,7 +24,7 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
  * *Configure Shindig:*
    * Get the Apache shindig source code. Make shindig up and running on your server. For more information refer to following link: http://incubator.apache.org/shindig/#php.
    * Once shindig is up and running, open the file esprit/sns/config/config.php, and copy the shindig url (like http://yourdomain:port/shindig/php or if you are using virtualhost then http://shindig) into $gadget_server. 
-   * Copy the following four esprit files into the shindig’s code at trunk/php/src/social-api/samplecontainer.
+   * Copy the following four esprit files into the shindig’s code at shindig/php/src/social-api/samplecontainer.
       * esprit/shindigFiles/espritPeopleService.php
       * esprit/shindigFiles/espritActivitiesService.php
       * esprit/shindigFiles/espritAppDataService.php
