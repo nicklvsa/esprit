@@ -26,7 +26,7 @@ Following files have been use from Shindig to form the security token:
  # !BasicBlobCrypter.php
  # !BasicSecurityToken.php
 
-Shindig container in ESPRIT can be implemented by using the shindig server components: !OpenSocial Restful component*
+Shindig container in ESPRIT can be implemented by using !OpenSocial Restful component.
 
 == !OpenSocial Restful Component ==
 
