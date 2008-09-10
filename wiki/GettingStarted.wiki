@@ -18,7 +18,7 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
  * *svn checkout the esprit source code from the following location:*
    * http://esprit.googlecode.com/svn/trunk/ esprit
  * *Configure Esprit:*
-   * Move the code on your webserver.
+   * Move the esprit folder (downloaded code) on your webserver.
    * Create a new !MySql database and run the scripts kept in the file: esprit/SQL/espritsns.sql.
    * Open the file esprit/sns/config/config.php,esprit/shindigFiles/espritDBFetcher.php and enter your database configurations.
  * *Configure Shindig:*
