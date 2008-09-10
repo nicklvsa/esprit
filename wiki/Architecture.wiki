@@ -1,6 +1,6 @@
 == Introduction ==
 
-This write-up gives a detailed technical architecture of the Esprit, which is a Social Networking Site (SNS) vis-à-vis Java Shindig !OpenSocial Reference implementation.
+This write-up gives an overview of the architecture of the Esprit, which is a Social Networking Site (SNS) vis-à-vis php Shindig !OpenSocial Reference implementation.
 
 
 == Details ==
