@@ -12,13 +12,14 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
  * MySQL 5.0
    * !MySql can be downloaded from: http://www.mysql.com/downloads/index.html
  * Apache Shindig 
-   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ shindig
+   * Apache Shindig can be downloaded from: svn co http://svn.apache.org/repos/asf/incubator/shindig/trunk/ shindig . Please note that this application is tried and tested on the Apache Shindig version as on Aug 20th'08.
+
 == Details ==
 
  * *svn checkout the esprit source code from the following location:*
    * http://esprit.googlecode.com/svn/trunk/ esprit
  * *Configure Esprit:*
-   * Move the esprit folder (downloaded code) on your webserver.
+   * Move the esprit folder (downloaded code) on your web server.
    * Create a new !MySql database and run the scripts kept in the file: esprit/SQL/espritsns.sql.
    * Open the file esprit/sns/config/config.php,esprit/shindigFiles/espritDBFetcher.php and enter your database configurations.
  * *Configure Shindig:*
@@ -38,9 +39,8 @@ Now the Esprit is ready to rock.Access it using the url: http://hostname:portnum
 
 
 == Additional Notes ==
- * Esprit is best working and tested with Restfull implemetation of PHP Shindig.
- * This application is tried and tested on the Apache Shindig version as on Aug 20th'08.
+ * Esprit is best working and tested with Restful implementation of PHP Shindig.
  * There are scripts (testData.sql in esprit/sql) for creating test users in the sns.Logging in with these users gives you an overall look and feel of the application. After running the scripts, login into esprit with following credentials:
     * Username: test1; password: test1
     * Username:test2; password: test2
- * User can also signup with esprit to create a new user.
+ * User can also sign up with esprit to create a new user.
