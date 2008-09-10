@@ -9,7 +9,6 @@ Esprit project is tested on Windows XP platform for now. Though it should work o
    * Enable Short tag in php.ini file of the PHP installation 
  * Apache Web server
    * Latest Apache web server can be downloaded from: http://httpd.apache.org/download.cgi   
-   * We have tested Esprit with Apache but it should work with any web server.
  * MySQL 5.0
    * MySql can be downloaded from: http://www.mysql.com/downloads/index.html
  * Apache Shindig 
