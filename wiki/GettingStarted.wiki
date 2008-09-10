@@ -1,5 +1,3 @@
-This guide provides step by step configuration of esprit, which is a PHP based SNS conforming to opensocial specification.
-
 ===OS Platform===
 Esprit project is tested on Windows XP platform for now. Though it should work on any platform which supports PHP. We will test on other platforms soon. That is #1 in our roadmap.
 
