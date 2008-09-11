@@ -1,4 +1,24 @@
 <?
+
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements. See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership. The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+
 ob_start();
 require_once ('panels/ImageCreateFromBmp.php');
 
@@ -43,8 +63,10 @@ if ($view_id == $_SESSION['user_id'])
         if (isset($_POST['uploadpic']))
         {
             $arr = explode("/", $_FILES['picfile']['type']);
+			$namepic = explode(".", $_FILES['picfile']['name']);
+
             $pic = "pic." . $arr[1];
-            if ($arr[0] == "image")
+            if ($arr[0] == "image" && $namepic[1]!= "bmp")
             {
 
                 copy($_FILES['picfile']['tmp_name'], $photo_path . "/" . $pic);
@@ -60,10 +82,6 @@ if ($view_id == $_SESSION['user_id'])
                     if (preg_match('/png/', $system[1]))
                     {
                         $src_img = imagecreatefrompng($image_path . "/" . $pic_name);
-                    }
-                    if (preg_match('/bmp/', $system[1]))
-                    {
-                        $src_img = ImageCreateFromBMP($image_path . "/" . $pic_name);
                     }
                     if (preg_match('/gif/', $system[1]))
                     {
@@ -139,7 +157,7 @@ if ($view_id == $_SESSION['user_id'])
 
 
 </div>
-<a href="javascript:void(0);" onclick="MM_showHideLayers('apDiv1','','show',event)"><font size='1.5'>change photo</font></a><br>
+<a href="javascript:void(0);" onclick="showHideLayers('apDiv1','','show',event)"><font size='1.5'>change photo</font></a><br>
 <?
     }
 }

@@ -18,13 +18,10 @@ function createthumb($image_path,$thumbs_path,$pic_name,$thumb_width)
 	if (preg_match('/png/',$system[1])){
 		$src_img = imagecreatefrompng($image_path."/".$pic_name);
 	}
-	if (preg_match('/bmp/',$system[1])){
-		$src_img = ImageCreateFromBMP($image_path."/".$pic_name);
-	}
 	if (preg_match('/gif/',$system[1])){
 		$src_img = imagecreatefromgif($image_path."/".$pic_name);
 	}
-		$origw=imagesx($src_img); 
+	$origw=imagesx($src_img); 
     $origh=imagesy($src_img); 
     $new_w = $thumb_width; 
     $diff=$origw/$new_w; 
@@ -40,7 +37,8 @@ if(isset($_POST['add_pic']))
 	$arr = explode("/",$_FILES['picfile']['type']);
 	$pic_name = $_FILES['picfile']['name'];
 	$max_filesize = 2300000;
-	if($arr[0]=="image")
+	$namepic = explode(".", $_FILES['picfile']['name']);
+	if($arr[0]=="image" && $namepic[1]!="bmp")
 	{		
 		 if($_FILES['picfile']['size'] > $max_filesize)
 		 {
@@ -70,7 +68,7 @@ if(isset($_POST['add_pic']))
 	}
 	else
 	{
-		$error="";
+		$error="PLease upload a valid file";
 	}
 
 	//create a xml file
