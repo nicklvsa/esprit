@@ -20,7 +20,6 @@
 
 
 ob_start();
-require_once ('panels/ImageCreateFromBmp.php');
 
 if (!file_exists($photo_path))
     $show_photo = "../html/images/default1.jpg";
