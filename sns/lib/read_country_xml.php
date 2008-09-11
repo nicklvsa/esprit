@@ -11,16 +11,8 @@ $xmlDoc->load("lib/country-en.xml");
    {
 	  
 	   $country_name[$country->getAttribute('id')] = $country->nodeValue;
-	   //$country_id[]  = $country->getAttribute('id').'<br />';
    }
- //print_r($country_name);
- 
- /* foreach($country_name as $id=>$name)
-  {
-	  echo "key".$id;
-	  echo "name".$name."\n";
-  }*/
- 
+  
 ?>
 
 
