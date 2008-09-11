@@ -19,7 +19,7 @@
  */
 
 /*
-* Part of this file/code is referred/taken by Partuza
+* Part of this code is referred from Partuza
 * http://code.google.com/p/partuza
 */
 	require('chkuser.php');
