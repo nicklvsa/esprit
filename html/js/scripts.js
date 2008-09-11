@@ -1,21 +1,3 @@
-function MM_showHideLayers() 
-{ //v9.0
-	var i,p,v,obj,args=MM_showHideLayers.arguments;
-	var event = args[args.length-1];
-	//alert (event.);
-	for (i=0; i<(args.length-2); i+=3) 
-	with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-	if (obj.style) 
-	{
-		obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; 
-	}
-	obj.visibility=v; 
-	obj.top =event.screenY-140+"px";
-	obj.left =event.screenX+30+"px";
-	}
-	return obj;
-}
-
 function cancel()
 {
 	document.getElementById('upload').visible = false;
@@ -27,7 +9,7 @@ function errorInUserPic()
 	MM_showHideLayers('apDiv1','','show',event);
 }
 
-function MM_showHideLayers() 
+function showHideLayers() 
 { //v9.0
 	var i,p,v,obj,args=MM_showHideLayers.arguments;
 	var event = args[args.length-1];
